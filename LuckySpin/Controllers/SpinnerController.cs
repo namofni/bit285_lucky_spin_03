@@ -10,6 +10,7 @@ namespace LuckySpin.Controllers
     {
         Random random = new Random();
 
+        //TODO: Update the Conroller to receive the Luck number from the Route
         public IActionResult Index()
         {
             int a = random.Next(1, 10);
@@ -17,14 +18,14 @@ namespace LuckySpin.Controllers
             int c = random.Next(1, 10);
 
             if (a == 7 || b == 7 || c == 7)
-                ViewBag.image = "block";
+                ViewBag.Display = "block";
             else
-                ViewBag.image = "none";
+                ViewBag.Display = "none";
 
 
-            ViewBag.a = a;
-            ViewBag.b = b;
-            ViewBag.c = c;
+            ViewBag.A = a;
+            ViewBag.B = b;
+            ViewBag.C = c;
 
 
             return View();
