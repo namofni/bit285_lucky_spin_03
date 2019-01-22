@@ -12,5 +12,9 @@
 
   <ItemGroup>
     <Folder Include="Views\Spinner\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models\EmptyClass.cs" />
   </ItemGroup>
 </Project>
